@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: var(--Poppin), var(--Lato),serif;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 25px;
+    
+}
+:root {
+    --blue:#325DFF;
+    --white:#FFFFFF;
+    --gray: #E4E4E4;
+    --black: #000000;
+    --darkblue:#0000FD;
+    --skyblue:#D9F0FF;
+    --DancingScript: 'Dancing Script';
+    --Lato: 'Lato';
+    --Poppin: 'Poppins';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--Lato);
+}
+h1{
+    font-size: 80px;
+}
+h2{
+    font-size: 65px;
+}
+h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 35px;
+}
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 18px;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 9999;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+
+    max-width: 1171px;
+    margin: 0 auto;
+}
+.cmn-btn{
+    min-width:307px;
+    min-height: 72px;
+    background-color: var(--blue);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 36px;
+}
+.banner-txt{
+    position: absolute;
+    color: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    
+}
+.banner-txt h2{
+    line-height: 133px;
+}
+.banner-txt p{
+ margin: 24px 0;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+}
+.flex-item{
+    display: flex;
+    gap: 20px;
+    
+}
+.flex-item a{
+    color:var(--white);
+}
+.logo{
+    font-family: var(--DancingScript);
+    font-size: 28px;
+    color:var(--skyblue)
+}
+
+.hamburger {
+    display: none;
+}
+.banner{
+    position: relative;
+}
+.banner-bg{
+    background-color: rgba(0, 0, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.first-block-content{
+    width: 50%;
+    align-items: center;
+}
+.first-block-content>div{
+    max-width: 486px;
+    margin: 0 auto;
+}
+.first-block-content h3{
+    line-height: 133px;
+}
+
+.first-block-content p{
+    margin: 24px 0;
+}
+
+.first-block-img{
+    width: 50%;
+}
+.section-for-fisrst-block{
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    gap: 20px;               
+    padding: 20px;
+}
+.container{
+    max-width: 1171px;
+    margin: 0 auto;
+}
+.product-sec{
+    padding: 48px 0;
+}
+.bg-gray{
+    background-color: var(--gray);
+}
+.cmn-ttl{
+    text-align: center;
+    margin: 50px;
+}
+.card-item{
+    background-color: var(--white);
+    padding:48px;
+    border: 1px solid var(--gray);
+    width: calc( calc(100% / 3) - 20px );
+    text-align: center;
+    flex-grow: 1;
+
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card-container{
+    gap: 20px;
+}
+.icon-class{
+    height: 88px;
+    width: 88px;
+    display: inline-flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+}
+.case_bg{
+    width: 100%;
+}
+.case-bg-banner{
+    position: relative;
+}
+.banner-bg-play{
+    position: absolute;
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+}
+.banner-bg-play h2{
+    line-height: 133px;
+}
+.banner-bg-play p{
+ margin: 24px 0;
+}
+
+.footer {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: var(--white);
+
+}
+
+
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+    .flex-item{
+        display: none;
+    }
+    .card-item{
+        
+        width: calc( calc(100% / 2) - 20px );
+       
+    }
+    #menu-box.open{
+        
+        display: flex;
+        background-color: var(red);
+    }
+}
+.case-bg{
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .hamburger {
+        display: block;
+    }
+    .flex-item{
+        display: none;
+    }
+    .card-item{
+        width: 100%;
+    }
+}
